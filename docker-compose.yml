@@ -1,8 +1,8 @@
 version: '3'
 services:
-  cf-azure-openai-proxy:
-    image: quantatrisk/cf-openai-azure-proxy:latest
-    container_name: cf-azure-openai-proxy
+  azure-openai-proxy:
+    image: quantatrisk/openai-azure-proxy:latest
+    container_name: azure-openai-proxy
     environment:
       - RESOURCE_NAME=changeme   #  Your Azure OpenAI Resourse Name.   eg.  changeme.openai.azure.com
       - DEPLOY_NAME_GPT35=gpt-35-turbo
